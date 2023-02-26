@@ -1,0 +1,84 @@
+@import "variables.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: calc($hd - 0.5px)) {
+  main {
+    overflow-y: hidden; 
+  }
+}
+
+@media screen and (max-width: calc($hd - 1px)) {
+  h1 {
+    font-family: 'Gogh';
+    font-size:   $fontSize32;
+    line-height: $lineHeight100;
+  }
+  h2 {
+    font-family: 'Gogh';
+    font-size:   $fontSize28;
+    line-height: $lineHeight100;
+  }
+  h3 {
+    font-family: 'Gogh';
+    font-size:   $fontSize24;
+    line-height: $lineHeight100;
+  }
+  h4 {
+    font-family: 'Gogh';
+    font-size:   $fontSize20;
+    line-height: $lineHeight100;
+  }
+}
+@media screen and (min-width: $hd) {
+  h1 {
+    font-family: 'Gogh';
+    font-size:   $fontSize56;
+    line-height: $lineHeight100;
+  }
+  h2 {
+    font-family: 'Gogh';
+    font-size:   $fontSize40;
+    line-height: $lineHeight100;
+  }
+  h3 {
+    font-family: 'Gogh';
+    font-size:   $fontSize28;
+    line-height: $lineHeight100;
+  }
+  h4 {
+    font-family: 'Gogh';
+    font-size:   $fontSize20;
+    line-height: $lineHeight100;
+  }
+}
+@mixin t1 {
+  font-family: 'Raleway-Regular';
+  font-size:   $fontSize20;
+  line-height: $lineHeight150;
+}
+@mixin t2 {
+  font-family: 'Raleway-Regular';
+  font-size:   $fontSize16;
+  line-height: $lineHeight150;
+}
+@mixin t3 {
+  font-family: 'Raleway-Regular';
+  font-size:   $fontSize14;
+  line-height: $lineHeight150;
+}
+@mixin t2_b {
+  font-family: 'Raleway-Bold';
+  font-size:   $fontSize16;
+  line-height: $lineHeight150;
+}
+@mixin t3_b {
+  font-family: 'Raleway-Bold';
+  font-size:   $fontSize14;
+  line-height: $lineHeight150;
+}

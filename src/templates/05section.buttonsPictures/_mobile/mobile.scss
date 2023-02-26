@@ -1,0 +1,60 @@
+@import "../../../static/scss/typography.scss";
+@import "../../../static/scss/variables.scss";
+
+#buttonsPictures {
+  display: block;
+  position: relative;
+  background-color: $quaternary;
+  width: 374px;
+  height: 638px;
+  margin: 0 auto;
+}
+.buttonsPictures-window {
+  position: absolute;
+  top: 82px;
+  left: 16px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 342px;
+  height: 178px;
+  border-radius: 8px;
+}
+.buttonsPictures-button {
+  position: relative;
+  top: 300px;
+  left: 16px;
+  margin-bottom: 19px;
+  width: 340px;
+  height: 72px;
+  background-color: $fivefold;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0px 0px 20px rgba(13, 64, 64, 0.1);
+  cursor: pointer;
+  @media(hover) {
+    &:hover {
+      border-color: $tertiary;
+    }
+  }
+  &.active {
+    border-color: $sixtyfold;
+  }
+  .buttonsPictures-img {
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    width: 48px;
+    height: 48px;
+  }
+  .buttonsPictures-text {
+    @include t1;
+    position: absolute;
+    top: 20px;
+    left: 82px;
+    color: $secondary;
+  }
+}

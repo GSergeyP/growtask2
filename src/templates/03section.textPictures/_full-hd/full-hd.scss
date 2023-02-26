@@ -1,0 +1,73 @@
+@import "../../../static/scss/typography.scss";
+@import "../../../static/scss/variables.scss";
+
+#textPictures {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: $quaternary;
+  width: 1920px;
+  height: 1520px;
+  margin: 0 auto;
+}
+.textPictures-left {
+  width: 50%;
+  .textPictures-left__item1 {
+    position: relative;
+    top: 122px;
+    left: 250px;
+    margin: 0;
+    padding: 0;
+    color: $primary;
+  }
+  .textPictures-left__item2 {
+    position: relative;
+    @include t1;
+    top: 142px;
+    left: 250px;  
+    width: 550px; 
+    color: $secondary;
+  }
+  .textPictures-left__item3 {
+    position: relative;
+    @include t1;
+    top: 152px;
+    left: 250px;  
+    width: 550px; 
+    color: $secondary;
+  }
+  .textPictures-left__item4 {
+    position: relative;
+    top: 212px;
+    left: 250px;
+    margin: 0 0 20px 0;
+    padding: 40px 40px 84px;
+    width: 500px;
+    background-color: $primary;
+    border-radius: 8px;
+    color: $ninefold;
+  }
+  .textPictures-left__item5 {
+    position: relative;
+    @include t2;
+    top: -272px;
+    left: 290px;  
+    margin-bottom: 175px;
+    width: 550px; 
+    color: $fivefold;
+  }
+}
+/////////////////////////////////////////////////
+.textPictures-right {
+  width: 50%;
+  .textPictures-right__item {
+    position: relative;
+    top: 122px;
+    left: 10px;
+    margin-bottom: 35px;
+    width: 700px;
+    height: 400px;
+    border-radius: 8px;
+  }
+}

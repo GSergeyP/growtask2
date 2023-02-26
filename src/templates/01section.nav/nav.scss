@@ -1,0 +1,14 @@
+@import "../../static/scss/variables.scss";
+
+@media screen and (min-width: $full-hd) {
+  @import "./_full-hd/full-hd.scss";
+}
+@media screen and (min-width: $hd) and (max-width: calc($full-hd - 0.5px)) {
+  @import "./_hd/hd.scss";
+}
+@media screen and (min-width: $tablet) and (max-width: calc($hd - 0.5px)) {
+  @import "./_tablet/tablet.scss";
+}
+@media screen and (max-width: calc($tablet - 0.5px)) {
+  @import "./_mobile/mobile.scss";
+}

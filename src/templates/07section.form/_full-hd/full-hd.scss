@@ -1,0 +1,241 @@
+@import "../../../static/scss/typography.scss";
+@import "../../../static/scss/variables.scss";
+
+#form {
+  display: block;
+  position: static;
+  background-color: $primary;
+  width: 1920px;
+  height: 712px;
+  margin: 0 auto;
+}
+.form-div {
+  position: relative;
+  top: 160px;
+  left: 250px;
+  width: 1420px;
+  height: 392px;
+  border-radius: 4px;
+  background-color: $primary;
+  background-image: url('data:image/svg+xml,<svg width="616" height="392" viewBox="0 0 616 392" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse opacity="0.3" cx="264.102" cy="149.088" rx="352.047" ry="350.302" transform="rotate(-44.2804 264.102 149.088)" fill="rgb(17, 166, 166)"/></svg>'),
+  url('data:image/svg+xml,<svg width="617" height="392" viewBox="0 0 617 392" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse opacity="0.3" cx="265.423" cy="240.419" rx="352.047" ry="350.302" transform="rotate(-44.2804 265.423 240.419)" fill="rgb(23, 230, 230)"/></svg>'),
+  url('data:image/svg+xml,<svg width="519" height="371" viewBox="0 0 519 371" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse opacity="0.3" cx="352.568" cy="20.4149" rx="351.886" ry="350.281" transform="rotate(5.71635 352.568 20.4149)" fill="rgb(23, 230, 230)"/></svg>'),
+  url('data:image/svg+xml,<svg width="588" height="392" viewBox="0 0 588 392" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse opacity="0.3" cx="352.172" cy="80.1122" rx="351.886" ry="350.281" transform="rotate(5.71635 352.172 80.1122)" fill="rgb(17, 166, 166)"/></svg>');
+  background-position: left top, left top, right top, right top;
+  background-repeat: no-repeat;
+}
+.form-h2 {
+  position: relative;
+  top: 58px;
+  left: 60px;
+  color: $fivefold;
+}
+.form-p {
+  @include t2;
+  position: relative;
+  top: 50px;
+  left: 60px;
+  width: 470px;
+  color: $fivefold;
+}
+.form-h4 {
+  position: relative;
+  top: 84px;
+  left: 60px;
+  color: $fivefold;
+}
+.form-icon__vk {
+  position: relative;
+  top: 88px;
+  left: 60px;
+  padding: 15px 11px;
+  background-color: $fivefold;
+  box-shadow: 0px 0px 20px rgba(13, 64, 64, 0.1);
+  border-radius: 4px;
+  width: 26.4px;
+  height: 16.8px;
+  fill: $elevenfold;
+  &:hover {
+    background-color: $quaternary;
+  }
+  &:active {
+    background-color: $tertiary;
+  }
+}
+.form-icon__telegram {
+  position: relative;
+  top: 88px;
+  left: 72px;
+  padding: 13px 12px;
+  background-color: $fivefold;
+  box-shadow: 0px 0px 20px rgba(13, 64, 64, 0.1);
+  border-radius: 4px;
+  width: 22.8px;
+  height: 20.4px;
+  fill: $elevenfold;
+  &:hover {
+    background-color: $quaternary;
+  }
+  &:active {
+    background-color: $tertiary;
+  }
+}
+.form-form {
+  position: absolute;
+  top: 58px;
+  left: 580px;
+  width: 780px;
+  height: 264px;
+  background-color: $fivefold;
+  border-radius: 8px;
+  .form-input {
+    @include t2;
+    width: 308px;
+    padding: 9px 15px 9px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    color: $secondary;
+    margin-bottom: 24px;
+    &.item1 {
+      position: relative;
+      top: 44px;
+      left: 39px;
+    }
+    &.item2 {
+      position: relative;
+      top: 44px;
+      left: 62px;
+    }
+  }
+  .form-button {
+    @include t3_b;
+    position: relative;
+    top: 42px;
+    left: 40px;
+    padding: 14px 21px;
+    background-color: $sixtyfold;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    color: $fivefold;
+    cursor: pointer;
+    &:hover {
+      background-color: $ninefold;
+    }
+    &:active {
+      background-color: $sevenfold;
+    }
+  }
+  .form-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .form-checkbox + label {
+    position: relative;
+    top: 47px;
+    left: 59px;
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+  }
+  label {
+    @include t3;
+    color: $secondary;
+  }
+  .form-checkbox + label::before {
+    content: '';
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    border: 2px solid $tertiary;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+  .form-checkbox:not(:disabled):not(:checked) + label:hover::before {
+    border-color: $tertiary;
+    background-image: url('data:image/svg+xml,<svg width="20" height="20" fill="none" version="1.1" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="m15 6.3c0.39 0.39 0.39 1 0 1.4l-6 6c-0.39 0.39-1 0.39-1.4 0l-3-3c-0.39-0.39-0.39-1 0-1.4 0.39-0.39 1-0.39 1.4 0l2.3 2.3 5.3-5.3c0.39-0.39 1-0.39 1.4 0z" clip-rule="evenodd" fill="rgb(218, 242, 242)" fill-rule="evenodd"/></svg>');
+    background-repeat: no-repeat;
+  }
+  .form-checkbox:not(:checked) + label:active::before {
+    border-color: $sixtyfold;
+    background-image: url('data:image/svg+xml,<svg width="20" height="20" fill="none" version="1.1" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="m15 6.3c0.39 0.39 0.39 1 0 1.4l-6 6c-0.39 0.39-1 0.39-1.4 0l-3-3c-0.39-0.39-0.39-1 0-1.4 0.39-0.39 1-0.39 1.4 0l2.3 2.3 5.3-5.3c0.39-0.39 1-0.39 1.4 0z" clip-rule="evenodd" fill="rgb(255, 255, 255)" fill-rule="evenodd"/></svg>');
+    background-color: $sixtyfold;
+    background-repeat: no-repeat;
+  }
+  .form-checkbox:checked + label:active::before {
+    border-color: $sixtyfold;
+    background-image: url('data:image/svg+xml,<svg width="20" height="20" fill="none" version="1.1" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="m15 6.3c0.39 0.39 0.39 1 0 1.4l-6 6c-0.39 0.39-1 0.39-1.4 0l-3-3c-0.39-0.39-0.39-1 0-1.4 0.39-0.39 1-0.39 1.4 0l2.3 2.3 5.3-5.3c0.39-0.39 1-0.39 1.4 0z" clip-rule="evenodd" fill="rgb(255, 255, 255)" fill-rule="evenodd"/></svg>');
+    background-color: $sixtyfold;
+    background-repeat: no-repeat;
+  }
+  .form-checkbox:checked + label::before {
+    border-color: $eightfold;
+    background-image: url('data:image/svg+xml,<svg width="20" height="20" fill="none" version="1.1" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="m15 6.3c0.39 0.39 0.39 1 0 1.4l-6 6c-0.39 0.39-1 0.39-1.4 0l-3-3c-0.39-0.39-0.39-1 0-1.4 0.39-0.39 1-0.39 1.4 0l2.3 2.3 5.3-5.3c0.39-0.39 1-0.39 1.4 0z" clip-rule="evenodd" fill="rgb(255, 255, 255)" fill-rule="evenodd"/></svg>');
+    background-repeat: no-repeat;
+    background-color: $eightfold;
+  }
+  @mixin label {
+    @include t2;
+    display: block;
+    width: 338px;
+    height: 44px;
+    border: 2px solid $tertiary;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+      border-color: $ninefold;
+    }
+    &.err {
+      border-color: $twelvefold;
+    } 
+  }
+  #form-question:focus ~ label[for="form-question"]:hover,
+  #form-name:focus ~ label[for="form-name"]:hover,
+  #form-contact:focus ~ label[for="form-contact"]:hover,
+  #form-network:focus ~ label[for="form-network"]:hover {
+    border-color: $sixtyfold;
+  }
+  #form-question:focus ~ label[for="form-question"]:not(:hover),
+  #form-name:focus ~ label[for="form-name"]:not(:hover),
+  #form-contact:focus ~ label[for="form-contact"]:not(:hover),
+  #form-network:focus ~ label[for="form-network"]:not(:hover) {
+    border-color: $sixtyfold;
+  }
+  .form-input:valid:focus {
+    @include t2_b;
+  }
+  .form-input:valid:not(:focus) {
+    @include t2_b;
+    border-color: $tertiary;
+  }
+  .form-input::placeholder {
+    @include t2;
+  }
+  label[for="form-question"] {
+    @include label;
+    position: relative;
+    top: -144px;
+    left: 40px;
+  }
+  label[for="form-name"] {
+    @include label;
+    position: relative;
+    top: -174px;
+    left: 40px;
+  }
+  label[for="form-contact"] {
+    @include label;
+    position: relative;
+    top: -192px;
+    left: 400px;
+  }
+  label[for="form-network"] {
+    @include label;
+    position: relative;
+    top: -222px;
+    left: 400px;
+  }
+}

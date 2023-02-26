@@ -1,0 +1,100 @@
+@import "../../../static/scss/typography.scss";
+@import "../../../static/scss/variables.scss";
+
+#info {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 1920px;
+  height: 932px;
+  margin: 0 auto;
+}
+.info-left {
+  width: 50%;
+  .info-left__item1 {
+    position: relative;
+    top: 193px;
+    left: 247px;
+    margin: 0;
+    padding: 0;
+    color: $primary;
+  }
+  .info-left__item2 {
+    position: relative;
+    top: 193px;
+    left: 247px;
+    margin: 0;
+    padding: 0;
+    color: $sevenfold;
+  }
+  .info-left__item3 {
+    @include t1;
+    position: relative;
+    top: 214px;
+    left: 247px;
+    width: 460px;
+    color: $secondary;
+  }
+  .info-left__item4 {
+    position: relative;
+    top: 254px;
+    left: 249px;
+    background-color: $primary;
+    border-radius: 8px;
+    margin: 0;
+    padding: 54px 39px 54px;
+    width: 424px;
+    height: 19px;
+    color: $fivefold;
+  }
+  .info-left__item5 {
+    position: relative;
+    top: 181px;
+    left: 492px;
+    margin: 0;
+    padding: 0;
+    color: $sixtyfold;
+  }
+  .info-left__item6 {
+    @include t3_b;
+    position: relative;
+    top: 160px;
+    left: 613px;
+    padding: 15px 20px;
+    background-color: $sixtyfold;
+    border-radius: 4px;
+    text-decoration: none;
+    color: $fivefold;
+    &:hover {
+      background-color: $ninefold;
+    } 
+    &:active {
+      background-color: $sevenfold;
+    } 
+  }
+}
+////////////////////////////////////////
+.info-right {
+  width: 50%;
+  .info-right__item {
+    width: 340px;
+    height: 340px;
+    border-radius: 8px;
+    &.item1 {
+      position: relative;
+      top: 113px;
+      left: 8px;
+    }
+    &.item2 {
+      position: relative;
+      top: 294px;
+      left: 30px;
+    }
+    &.item3 {
+      position: relative;
+      top: 130px;
+      left: 8px;
+    }
+  }
+}
